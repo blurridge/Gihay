@@ -83,7 +83,7 @@ export const NavbarComponent = () => {
     return (
       <nav
         className={`fixed top-0 left-0 right-0 z-50 w-full flex justify-between bg-white ${
-          !top && `shadow-lg glass`
+          !top && `shadow-lg`
         }`}
       >
         <a href="#">
@@ -94,15 +94,15 @@ export const NavbarComponent = () => {
             alt="Zach Riane Machacon logo"
           />
         </a>
-        <div className="flex items-center justify-center gap-10 font-semibold text-lg mr-10">
+        <div className="flex items-center justify-center gap-10 font-semibold text-xl mr-10">
           <a href="#about" className="hover:text-gray-600">
             About
           </a>
           <a href="#experience" className="hover:text-gray-600">
-            Experience
+            Events
           </a>
           <a href="#projects" className="hover:text-gray-600">
-            Projects
+            Blog
           </a>
           <a href="#contact" className="hover:text-gray-600">
             Contact
