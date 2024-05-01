@@ -1,19 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import gihay_logo from "@/assets/gihay_main_logo.png";
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/Hero.astro";
 ---
 
 <Layout title="Gihay Initiative | Para Hayahay Sa Babay">
   <main>
-    <div class="text-8xl font-bright font-normal">
-      This text is in Glacial Indifference regular.
+    <Navbar />
+    <div class="mt-28">
+      <Hero />
     </div>
-    <div class="text-4xl font-glacial font-bold">
-      This text is in Glacial Indifference bold.
-    </div>
-    <div class="text-4xl font-glacial italic">
-      This text is in Glacial Indifference italic.
-    </div>
-    <img src={gihay_logo.src} />
   </main>
 </Layout>
