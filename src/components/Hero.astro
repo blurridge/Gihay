@@ -1,5 +1,5 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
 import handsUp from "@/assets/hero/hands_up.svg";
 import kidsImage from "@/assets/hero/_DSC1182.jpg";
@@ -23,7 +23,10 @@ import bothImage from "@/assets/hero/_DSC1966.jpg";
       >, ensuring <span class="emphasis">universal health education</span>, and
       advocating for <span class="emphasis">systemic change</span>.</span
     >
-    <Button className="text-white text-lg font-semibold rounded-xl w-fit mt-5 p-5">JOIN US</Button>
+    <Button
+      className="text-white text-lg font-semibold rounded-xl w-fit mt-5 p-5"
+      >JOIN US</Button
+    >
   </div>
   <div
     class="absolute top-0 right-0 w-1/2 h-full pt-28 flex flex-col justify-center px-10"
