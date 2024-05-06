@@ -28,7 +28,7 @@ export const NavbarComponent = () => {
               className="ml-2"
               src={gihay_logo.src}
               width="100"
-              alt="Zach Riane Machacon logo"
+              alt="Gihay logo"
             />
           </a>
           <button onClick={toggleMenu} className="p-4">
@@ -92,7 +92,7 @@ export const NavbarComponent = () => {
             className="ml-2"
             src={gihay_logo.src}
             width="100"
-            alt="Zach Riane Machacon logo"
+            alt="Gihay logo"
           />
         </a>
         <div className="flex items-center justify-center gap-10 text-black font-medium text-xl">

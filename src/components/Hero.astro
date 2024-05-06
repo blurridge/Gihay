@@ -1,6 +1,54 @@
 ---
+import Image from "astro/components/Image.astro";
+import { Button } from "@/components/ui/button";
+import handsUp from "@/assets/hero/hands_up.svg";
+import kidsImage from "@/assets/hero/_DSC1182.jpg";
+import georgeImage from "@/assets/hero/_DSC0305.jpg";
+import devsImage from "@/assets/hero/_DSC1212.jpg";
+import bothImage from "@/assets/hero/_DSC1966.jpg";
 ---
 
-<section class="h-screen flex flex-col z-0 bg-gihay-bg pt-28">
-  
+<section class="relative h-screen flex z-0 bg-gihay-bg">
+  <Image class="w-full h-full opacity-10" src={handsUp} alt="Hands up" />
+  <div class="absolute w-1/2 h-full pt-28 flex flex-col justify-center px-10">
+    <div class="relative">
+      <span class="font-bright text-5xl absolute ml-4 mt-16"
+        >Menstrual hygiene is a</span
+      >
+      <span class="font-bright text-9xl opacity-30">HUMAN RIGHT</span>
+    </div>
+    <span class="text-xl"
+      >Empowering lives by eliminating <span class="emphasis"
+        >period poverty</span
+      >, ensuring <span class="emphasis">universal health education</span>, and
+      advocating for <span class="emphasis">systemic change</span>.</span
+    >
+    <Button className="text-white text-lg font-semibold rounded-xl w-fit mt-5 p-5">JOIN US</Button>
+  </div>
+  <div
+    class="absolute top-0 right-0 w-1/2 h-full pt-28 flex flex-col justify-center px-10"
+  >
+    <div class="relative w-full h-full">
+      <Image
+        class="w-[25vw] absolute left-0 top-10 shadow-2xl"
+        src={kidsImage}
+        alt="Kids with Gihay kits"
+      />
+      <Image
+        class="w-[25vw] absolute left-0 bottom-[25%] shadow-2xl"
+        src={bothImage}
+        alt="Picture of Alix and Devhora lecturing"
+      />
+      <Image
+        class="w-[25vw] absolute right-0 top-[25%] shadow-2xl"
+        src={devsImage}
+        alt="Picture of Devhora lecturing"
+      />
+      <Image
+        class="w-[25vw] absolute right-0 bottom-10 shadow-2xl"
+        src={georgeImage}
+        alt="Picture of George holding Gihay kit"
+      />
+    </div>
+  </div>
 </section>
