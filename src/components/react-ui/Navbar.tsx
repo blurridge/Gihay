@@ -2,8 +2,9 @@ import { isMobile, isMobileMenuOpen, isTop } from "@/stores/navStore";
 import { useStore } from "@nanostores/react";
 import { Menu } from "lucide-react";
 import { Transition } from "@headlessui/react";
+import { X, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import gihay_logo from "@/assets/gihay_main_logo.png";
-import { X } from "lucide-react";
 
 export const NavbarComponent = () => {
   const top = useStore(isTop);
@@ -18,7 +19,7 @@ export const NavbarComponent = () => {
     return (
       <nav
         className={`fixed top-0 left-0 right-0 z-50 w-full bg-white ${
-          !top && `shadow-lg glass`
+          !top && `shadow-lg`
         }`}
       >
         <div className="flex justify-between">
@@ -82,7 +83,7 @@ export const NavbarComponent = () => {
   } else {
     return (
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 w-full flex justify-between bg-white ${
+        className={`fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-between text-white bg-gihay-bg py-2 ${
           !top && `shadow-lg`
         }`}
       >
@@ -94,20 +95,26 @@ export const NavbarComponent = () => {
             alt="Zach Riane Machacon logo"
           />
         </a>
-        <div className="flex items-center justify-center gap-10 font-semibold text-xl mr-10">
-          <a href="#about" className="hover:text-gray-600">
+        <div className="flex items-center justify-center gap-10 text-black font-medium text-xl">
+          <a href="#about" className="hover:text-gihay-highlight">
             About
           </a>
-          <a href="#experience" className="hover:text-gray-600">
+          <a href="#experience" className="hover:text-gihay-highlight">
             Events
           </a>
-          <a href="#projects" className="hover:text-gray-600">
+          <a href="#projects" className="hover:text-gihay-highlight">
             Blog
           </a>
-          <a href="#contact" className="hover:text-gray-600">
+          <a href="#contact" className="hover:text-gihay-highlight">
             Contact
           </a>
         </div>
+        <Button
+          className="bg-gihay-gradient flex gap-2 justify-center items-center mr-5 mb-2 text-white hover:text-gihay-bg rounded-xl"
+        >
+          <Heart />
+          <span className="font-semibold">GET INVOLVED</span>
+        </Button>
       </nav>
     );
   }
