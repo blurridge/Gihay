@@ -99,9 +99,6 @@ export const NavbarComponent = () => {
           <a href="#about" className="hover:text-gihay-highlight">
             About
           </a>
-          <a href="#experience" className="hover:text-gihay-highlight">
-            Events
-          </a>
           <a href="#projects" className="hover:text-gihay-highlight">
             Blog
           </a>

@@ -8,6 +8,7 @@ import {
   TimelineItem,
   TimelineLine,
 } from "@/components/ui/timeline";
+import gihay_logo from "@/assets/gihay_main_logo.png";
 import gihay_launch from "@/assets/about/gihay_launch.jpeg";
 import gihay_first_workshop from "@/assets/about/gihay_first_workshop.jpeg";
 import gihay_thousand_cores from "@/assets/about/gihay_thousand_cores.jpeg";
@@ -18,16 +19,42 @@ import gihay_hundred from "@/assets/about/gihay_hundred.jpeg";
 import gihay_calma_distribution from "@/assets/about/gihay_calma_distribution.jpeg";
 import gihay_umapad_distribution from "@/assets/about/gihay_umapad_distribution.jpeg";
 import gihay_my_refuge from "@/assets/about/gihay_my_refuge.png";
+import { Target } from "lucide-react";
 ---
 
 <section
   class="h-full flex flex-col bg-gihay-bg-section py-10 gap-10 items-center"
 >
   <div class="flex justify-center h-fit gap-4">
-    <span class="font-extrabold text-9xl text-gihay-text">About</span>
+    <span class="font-extrabold text-9xl text-gihay-dark-pink">About</span>
     <div class="flex flex-col justify-end">
-      <span class="font-bright text-6xl text-gihay-text">Gihay</span>
-      <span class="font-bright text-6xl text-gihay-text">Initiative</span>
+      <span class="font-bright text-6xl text-gihay-dark-pink">Gihay</span>
+      <span class="font-bright text-6xl text-gihay-dark-pink">Initiative</span>
+    </div>
+  </div>
+  <div class="flex gap-5 items-center justify-center z-0">
+    <Image src={gihay_logo} class="" width="400" alt="Gihay logo" />
+    <div class="flex flex-col gap-10 z-0 w-1/2">
+      <div>
+        <span class="text-gihay-text text-5xl font-medium">
+          Gihay Initiative aims to support disadvantaged women in Cebu by
+          offering them <span class="emphasis"
+            >sustainable, reusable napkins</span
+          >.
+        </span>
+      </div>
+      <div class="flex flex-col gap-2">
+        <span class="text-gihay-text text-xl"
+          >We envision a society designed to eliminate the socio-economic
+          setbacks of period poverty where proper health information is standard
+          and the interests against period poverty are lobbied.
+        </span>
+        <span class="text-gihay-text text-xl"
+          >Our mission is to provide underprivileged people who menstruate
+          access to menstrual products and proper health information in schools
+          and lower income areas in Cebu.</span
+        >
+      </div>
     </div>
   </div>
   <div class="w-9/12">
