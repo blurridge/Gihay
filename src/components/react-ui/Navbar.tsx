@@ -18,7 +18,7 @@ export const NavbarComponent = () => {
   if (mobile) {
     return (
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 w-full bg-white ${
+        className={`fixed top-0 left-0 right-0 z-50 w-full bg-gihay-bg ${
           !top && `shadow-lg`
         }`}
       >
@@ -44,34 +44,31 @@ export const NavbarComponent = () => {
           leaveFrom="opacity-100 z-[-1] absolute left-0 right-0 top-0"
           leaveTo="opacity-0 z-[-1] absolute left-0 right-0 top-[-100vh]"
         >
-          <div className="z-[-1] absolute left-0 right-0 top-0 h-screen gap-10 flex flex-col text-2xl font-semibold justify-center items-center bg-white border-t-2 shadow-md">
-            <a href="#" className="hover:text-gray-600" onClick={toggleMenu}>
+          <div className="z-[-1] absolute left-0 right-0 top-0 h-screen gap-10 flex flex-col text-2xl font-semibold justify-center items-center bg-gihay-bg border-t-2 shadow-md">
+            <a
+              href="#"
+              className="hover:text-gihay-highlight"
+              onClick={toggleMenu}
+            >
               Home
             </a>
             <a
               href="#about"
-              className="hover:text-gray-600"
+              className="hover:text-gihay-highlight"
               onClick={toggleMenu}
             >
               About
             </a>
             <a
-              href="#experience"
-              className="hover:text-gray-600"
+              href="#blog"
+              className="hover:text-gihay-highlight"
               onClick={toggleMenu}
             >
-              Experience
-            </a>
-            <a
-              href="#projects"
-              className="hover:text-gray-600"
-              onClick={toggleMenu}
-            >
-              Projects
+              Blog
             </a>
             <a
               href="#contact"
-              className="hover:text-gray-600"
+              className="hover:text-gihay-highlight"
               onClick={toggleMenu}
             >
               Contact
@@ -99,16 +96,14 @@ export const NavbarComponent = () => {
           <a href="#about" className="hover:text-gihay-highlight">
             About
           </a>
-          <a href="#projects" className="hover:text-gihay-highlight">
+          <a href="#blog" className="hover:text-gihay-highlight">
             Blog
           </a>
           <a href="#contact" className="hover:text-gihay-highlight">
             Contact
           </a>
         </div>
-        <Button
-          className="bg-gihay-gradient flex gap-2 justify-center items-center mr-5 mb-2 text-white hover:text-gihay-bg rounded-xl"
-        >
+        <Button className="bg-gihay-gradient flex gap-2 justify-center items-center mr-5 mb-2 text-white hover:text-gihay-bg rounded-xl">
           <Heart />
           <span className="font-semibold">GET INVOLVED</span>
         </Button>

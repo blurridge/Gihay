@@ -5,7 +5,9 @@ export const FooterYear = () => {
   const year = useStore(currentYear);
   return (
     <>
-      <span>©{year} Gihay Initiative</span>
+      <span className="text-xs md:text-sm lg:text-base">
+        ©{year} Gihay Initiative
+      </span>
     </>
   );
 };
