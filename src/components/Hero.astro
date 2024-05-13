@@ -2,10 +2,7 @@
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
 import handsUp from "@/assets/hero/hands_up.svg";
-import kidsImage from "@/assets/hero/DSC1182.jpg";
-import georgeImage from "@/assets/hero/DSC0305.jpg";
-import devsImage from "@/assets/hero/DSC1212.jpg";
-import bothImage from "@/assets/hero/DSC1966.jpg";
+import gihayCollage from "@/assets/hero/collage.png";
 ---
 
 <section class="relative h-[115vh] flex z-0 bg-gihay-bg">
@@ -33,26 +30,7 @@ import bothImage from "@/assets/hero/DSC1966.jpg";
       class="absolute top-0 right-0 w-1/2 h-full pt-28 flex flex-col justify-center items-center px-10"
     >
       <div class="relative w-full h-full">
-        <Image
-          class="w-[25vw] absolute left-0 top-4 shadow-2xl"
-          src={kidsImage}
-          alt="Kids with Gihay kits"
-        />
-        <Image
-          class="w-[25vw] absolute left-0 bottom-32 shadow-2xl"
-          src={bothImage}
-          alt="Picture of Alix and Devhora lecturing"
-        />
-        <Image
-          class="w-[25vw] absolute right-0 top-28 shadow-2xl"
-          src={devsImage}
-          alt="Picture of Devhora lecturing"
-        />
-        <Image
-          class="w-[25vw] absolute right-0 bottom-6 shadow-2xl"
-          src={georgeImage}
-          alt="Picture of George holding Gihay kit"
-        />
+        <img src={gihayCollage.src} alt="Kids with Gihay kits" />
       </div>
     </div>
   </div>
