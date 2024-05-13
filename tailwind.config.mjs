@@ -49,6 +49,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         "gihay-bg": "#F9CECD",
+        "gihay-bg-section": "#f49cb4",
         "gihay-text": "#55192D",
         "gihay-highlight": "#F63E7B",
         "gihay-dark-pink": "#940D3E",

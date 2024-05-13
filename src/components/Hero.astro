@@ -8,50 +8,86 @@ import devsImage from "@/assets/hero/DSC1212.jpg";
 import bothImage from "@/assets/hero/DSC1966.jpg";
 ---
 
-<section class="relative h-screen flex z-0 bg-gihay-bg">
+<section class="relative h-[115vh] flex z-0 bg-gihay-bg">
   <Image class="w-full h-full opacity-10" src={handsUp} alt="Hands up" />
-  <div class="absolute w-1/2 h-full pt-28 flex flex-col justify-center px-10">
-    <div class="relative">
-      <span class="font-bright text-5xl absolute ml-4 mt-16"
-        >Menstrual hygiene is a</span
+  <div class="absolute w-full h-screen">
+    <div class="w-1/2 h-full pt-28 flex flex-col justify-center px-10">
+      <div class="relative">
+        <span class="font-bright text-5xl absolute ml-4 mt-16"
+          >Menstrual hygiene is a</span
+        >
+        <span class="font-bright text-9xl opacity-30">HUMAN RIGHT</span>
+      </div>
+      <span class="text-xl"
+        >Empowering lives by eliminating <span class="emphasis"
+          >period poverty</span
+        >, ensuring <span class="emphasis">universal health education</span>,
+        and advocating for <span class="emphasis">systemic change</span>.</span
       >
-      <span class="font-bright text-9xl opacity-30">HUMAN RIGHT</span>
+      <Button
+        className="text-white text-lg font-semibold rounded-xl w-fit mt-5 p-5"
+        >JOIN US</Button
+      >
     </div>
-    <span class="text-xl"
-      >Empowering lives by eliminating <span class="emphasis"
-        >period poverty</span
-      >, ensuring <span class="emphasis">universal health education</span>, and
-      advocating for <span class="emphasis">systemic change</span>.</span
+    <div
+      class="absolute top-0 right-0 w-1/2 h-full pt-28 flex flex-col justify-center px-10"
     >
-    <Button
-      className="text-white text-lg font-semibold rounded-xl w-fit mt-5 p-5"
-      >JOIN US</Button
-    >
+      <div class="relative w-full h-full">
+        <Image
+          class="w-[25vw] absolute left-0 top-10 shadow-2xl"
+          src={kidsImage}
+          alt="Kids with Gihay kits"
+        />
+        <Image
+          class="w-[25vw] absolute left-0 bottom-[25%] shadow-2xl"
+          src={bothImage}
+          alt="Picture of Alix and Devhora lecturing"
+        />
+        <Image
+          class="w-[25vw] absolute right-0 top-[25%] shadow-2xl"
+          src={devsImage}
+          alt="Picture of Devhora lecturing"
+        />
+        <Image
+          class="w-[25vw] absolute right-0 bottom-10 shadow-2xl"
+          src={georgeImage}
+          alt="Picture of George holding Gihay kit"
+        />
+      </div>
+    </div>
   </div>
-  <div
-    class="absolute top-0 right-0 w-1/2 h-full pt-28 flex flex-col justify-center px-10"
-  >
-    <div class="relative w-full h-full">
-      <Image
-        class="w-[25vw] absolute left-0 top-10 shadow-2xl"
-        src={kidsImage}
-        alt="Kids with Gihay kits"
-      />
-      <Image
-        class="w-[25vw] absolute left-0 bottom-[25%] shadow-2xl"
-        src={bothImage}
-        alt="Picture of Alix and Devhora lecturing"
-      />
-      <Image
-        class="w-[25vw] absolute right-0 top-[25%] shadow-2xl"
-        src={devsImage}
-        alt="Picture of Devhora lecturing"
-      />
-      <Image
-        class="w-[25vw] absolute right-0 bottom-10 shadow-2xl"
-        src={georgeImage}
-        alt="Picture of George holding Gihay kit"
-      />
-    </div>
+  <div class="custom-shape-divider-bottom-1715063137">
+    <svg
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        class="shape-fill"></path>
+    </svg>
   </div>
 </section>
+
+<style>
+  .custom-shape-divider-bottom-1715063137 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1715063137 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+  }
+
+  .custom-shape-divider-bottom-1715063137 .shape-fill {
+    fill: #f49cb4;
+  }
+</style>
