@@ -6,16 +6,22 @@ import gihayCollage from "@/assets/hero/collage.png";
 ---
 
 <section class="relative h-[115vh] flex z-0 bg-gihay-bg">
-  <Image class="w-full h-full opacity-10" src={handsUp} alt="Hands up" />
-  <div class="absolute w-full h-screen">
-    <div class="w-1/2 h-full pt-28 flex flex-col justify-center px-10">
+  <Image class="w-full h-full opacity-10 object-cover" src={handsUp} alt="Hands up" />
+  <div class="absolute w-full h-screen flex flex-col xl:flex-row">
+    <div
+      class="w-full xl:w-1/2 h-full xl:pt-28 flex flex-col items-center xl:items-start justify-start md:justify-center px-2 lg:px-10 order-2 xl:order-1"
+    >
       <div class="relative">
-        <span class="font-bright text-5xl absolute ml-4 mt-16"
+        <span
+          class="font-bright text-2xl sm:text-4xl 2xl:text-5xl absolute ml-8 md:ml-12 xl:ml-4 mt-4 sm:mt-8 xl:mt-12 2xl:mt-16"
           >Menstrual hygiene is a</span
         >
-        <span class="font-bright text-9xl opacity-30">HUMAN RIGHT</span>
+        <span
+          class="font-bright text-5xl sm:text-7xl xl:text-8xl 2xl:text-9xl opacity-30"
+          >HUMAN RIGHT</span
+        >
       </div>
-      <span class="text-xl"
+      <span class="w-11/12 text-center xl:text-start text-lg md:text-xl"
         >Empowering lives by eliminating <span class="emphasis"
           >period poverty</span
         >, ensuring <span class="emphasis">universal health education</span>,
@@ -27,10 +33,14 @@ import gihayCollage from "@/assets/hero/collage.png";
       >
     </div>
     <div
-      class="absolute top-0 right-0 w-1/2 h-full pt-28 flex flex-col justify-center items-center px-10"
+      class="w-screen xl:w-1/2 h-full pt-28 flex flex-col justify-center px-4 sm:px-10 order-1 xl:order-2"
     >
-      <div class="relative w-full h-full">
-        <img src={gihayCollage.src} alt="Kids with Gihay kits" />
+      <div class="w-full h-[55vh] lg:h-[60vh] xl:h-full flex justify-center items-center">
+        <img
+          class="max-w-full max-h-full object-cover"
+          src={gihayCollage.src}
+          alt="Kids with Gihay kits"
+        />
       </div>
     </div>
   </div>
