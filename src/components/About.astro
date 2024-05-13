@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import gihay_logo from "@/assets/gihay_main_logo.png";
 import gihay_face_logo from "@/assets/about/gihay_face_logo.png";
 import gihay_flower_logo from "@/assets/about/gihay_flower_logo.png";
@@ -18,7 +17,7 @@ import gihay_woman_logo from "@/assets/about/gihay_woman_logo.png";
     </div>
   </div>
   <div class="flex gap-5 items-center justify-center z-0">
-    <Image src={gihay_logo} class="" width="400" alt="Gihay logo" />
+    <img src={gihay_logo.src} class="" width="400" alt="Gihay logo" />
     <div class="flex flex-col gap-10 z-0 w-1/2">
       <div>
         <span class="text-gihay-text text-5xl font-medium">
@@ -44,8 +43,8 @@ import gihay_woman_logo from "@/assets/about/gihay_woman_logo.png";
   </div>
   <div class="flex items-center justify-center gap-5 mb-40">
     <div class="w-1/5 flex flex-col items-center justify-center">
-      <Image
-        src={gihay_hand_logo}
+      <img
+        src={gihay_hand_logo.src}
         alt="Gihay hand picture"
         class="w-full object-cover mb-2"
       />
@@ -55,8 +54,8 @@ import gihay_woman_logo from "@/assets/about/gihay_woman_logo.png";
       >
     </div>
     <div class="w-1/5 h-auto flex flex-col items-center justify-center">
-      <Image
-        src={gihay_face_logo}
+      <img
+        src={gihay_face_logo.src}
         alt="Gihay face picture"
         class="w-full object-cover mb-2"
       />
@@ -68,8 +67,8 @@ import gihay_woman_logo from "@/assets/about/gihay_woman_logo.png";
       >
     </div>
     <div class="w-1/5 h-auto flex flex-col items-center justify-center">
-      <Image
-        src={gihay_woman_logo}
+      <img
+        src={gihay_woman_logo.src}
         alt="Gihay woman picture"
         class="w-full object-cover mb-2"
       />
@@ -79,8 +78,8 @@ import gihay_woman_logo from "@/assets/about/gihay_woman_logo.png";
       >
     </div>
     <div class="w-1/5 h-auto flex flex-col items-center">
-      <Image
-        src={gihay_flower_logo}
+      <img
+        src={gihay_flower_logo.src}
         alt="Gihay flower picture"
         class="w-full object-cover mb-2"
       />
