@@ -91,7 +91,7 @@ export const NavbarComponent = () => {
           <img
             className="ml-2"
             src={gihay_logo.src}
-            width="100"
+            width="75"
             alt="Gihay logo"
           />
         </a>
