@@ -18,7 +18,7 @@ export const NavbarComponent = () => {
   if (mobile) {
     return (
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 w-full bg-gihay-bg ${
+        className={`fixed top-0 left-0 right-0 z-50 w-full bg-gihay-bg py-2 ${
           !top && `shadow-lg`
         }`}
       >
@@ -27,7 +27,7 @@ export const NavbarComponent = () => {
             <img
               className="ml-2"
               src={gihay_logo.src}
-              width="100"
+              width="75"
               alt="Gihay logo"
             />
           </a>
